@@ -1,3 +1,19 @@
+To Run:
+
+```
+pip install ./pkg_a ./pkg_b
+python3 -c "import example_pkg.a.hello"
+```
+
+Which prints:
+
+```
+hello from pkg_a __init__
+hello from pkg_b hello
+```
+
+The takeaway is despite `pkg_a/example_pkg/a/__init__.py` existing, `pkg_b/example_pkg/a/hello.py` is still discoverable
+
 # [pkgutil-style namespace packages](https://packaging.python.org/guides/packaging-namespace-packages/#pkgutil-style-namespace-packages)
 
 The following examples demonstrates the usage / installation of `pkgutil` style namespace packages. 

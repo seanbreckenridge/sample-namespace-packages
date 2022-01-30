@@ -13,3 +13,5 @@
 # limitations under the License.
 
 name = 'a'
+
+print("hello from pkg_a __init__")
